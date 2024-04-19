@@ -1,0 +1,458 @@
+/*  google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* similar content styling codes */
+section {
+  padding: 100px 0;
+}
+.max-width {
+  max-width: 100%;
+  padding: 0 80px;
+  margin: auto;
+}
+.about,
+.services,
+.teams,
+.contact, .resume,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  padding-bottom: 4px;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px 2px rgb(31, 194, 189);
+  transition: 15sec;
+}
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-bottom: 1px;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px 2px rgb(31, 194, 189);
+  transition: 15sec;
+}
+
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 0.2px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar .max-width {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: rgb(23, 197, 156);
+}
+
+
+/* menu btn styling */
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: url("bg1.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 90%;
+  display: flex;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: rgb(85, 233, 181);
+  font-weight: 400;
+}
+.home .home-content a {
+  display: inline-block;
+  background: rgb(42 146 109 / 48%);
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid rgb(255 255 255);
+  transition: all 0.3s ease;
+}
+
+/* about section styling */
+.about .about-content .left {
+  width: 40%;
+}
+.about .about-content .left img {
+  height: 400px;
+  width: 350px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.about .about-content .right {
+  width: 60%;
+}
+
+.about .about-content .right p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.cv {
+  display: inline-block;
+  background: #15a892;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 11px;
+  border: 2px solid #1acaaa;
+  transition: all 0.3s ease;
+}
+.cv:hover {
+  color: #15a892;
+  background: none;
+}
+
+
+/* skills section styling */
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: center;
+}
+.teams .check-me {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.teams .carousel .card {
+  background: #222;
+  border-radius: 36px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* contact section styling */
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: rgb(37, 232, 199);
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border: 2px solid rgb(0, 0, 0);
+  background: #ace9e3c5;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button {
+  display: inline-block;
+  background: #15a892;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 11px;
+  border: 2px solid #1acaaa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.right form .button-area button:hover {
+  color: #15a892;
+  background: none;
+}
+
+
+/* footer section styling */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  margin-top: -50px;
+  color: #fff;
+  text-align: center;
+}
+
+.img-logo {
+  height: 95px;
+}
+
+/* skills section styling */
+.skills1 {
+  width: 100px;
+  height: 100px;
+}
+
+.skills-bg {
+  margin: 19px;
+  padding: 5px;
+  border-radius: 18px;
+}
+
+.skills2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 333px;
+  margin-top: 22px;
+  border: 3px solid white;
+}
+
+.detail {
+  position: relative;
+}
+
+.detail:after {
+  content: attr(data-hover);
+  visibility: hidden;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 143%;
+  right: 33%;
+}
+
+.detail:hover:after {
+  visibility: visible;
+}
+
+.skills .text {
+  margin: auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.about .text {
+  margin: auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Qualifications */
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume-title{
+  margin-bottom: 20px;
+}
+
+.resume .resume-item h4 {
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;  
+  display: inline-block;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+
+/*Portfolio*/
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+.portfolio-img {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+}
+.portfolio-img img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  
+}
+.portfolio-img img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.work-name{
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: center;
+}
